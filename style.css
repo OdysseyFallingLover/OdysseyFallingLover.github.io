@@ -6,25 +6,6 @@
   --font-size-h2: 2rem;
 }
 
-#dexscreener-embed {
-  position:relative;
-  width:100%;
-  padding-bottom:125%;
-}
-@media(min-width:1400px) {
-  #dexscreener-embed {
-    padding-bottom:65%;
-  }
-}
-#dexscreener-embed iframe {
-  position:absolute;
-  width:100%;
-  height:480px;
-  top:0;
-  left:0;
-  border:0;
-}
-
 * {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
@@ -41,17 +22,12 @@ body {
   font-family: var(--font-family-base);
   line-height: 1.5;
   margin: 0;
-  min-height: 100vh;
   padding: 5vmin;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   justify-items: center;
   place-items: center;
-}
-
-address {
-  font-style: normal;
 }
 
 button {
@@ -61,17 +37,27 @@ button {
   font: inherit;
 }
 
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+.block {
+  display:block;
+  width: 144px;
+  height: 64px;
+  text-align: center;
+  border-radius: 12px;
 }
 
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
 h1 {
   font-size: var(--font-size-h1);
   line-height: 1.2;
   margin-top: 0;
-  margin-bottom: 1.5em;
+  margin-bottom: 4pxs;
 }
 
 h2 {
@@ -81,21 +67,6 @@ h2 {
   margin-bottom: 0.5em;
 }
 
-legend {
-  font-weight: 600;
-  margin-bottom: 0.5em;
-  padding: 0;
-}
-
-input {
-  border: 0;
-  color: inherit;
-  font: inherit;
-}
-
-input[type="radio"] {
-  accent-color: var(--color-primary);
-}
 
 table {
   border-collapse: collapse;
@@ -125,95 +96,17 @@ tfoot {
   place-items: center;
 }
 
-.button {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: var(--color-primary);
-  border-radius: 999em;
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  grid-gap: 0.5em;
-  gap: 0.5em;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
-  padding-left: 1em;
-  padding-right: 1em;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.button:focus,
-.button:hover {
-  background-color: #e96363;
-}
-
-.button--full {
-  width: 100%;
-}
-
-.card {
+.chart {
+  height: 480;width: 720;
   border-radius: 1em;
-  background-color: #fc8080;
-  background-color: var(--color-primary);
+  background-color: #15001f;
   color: #fff;
   padding: 1em;
-}
-
-.form {
-  display: grid;
-  grid-gap: 2em;
-  gap: 2em;
-}
-
-.form__radios {
-  display: grid;
-  grid-gap: 1em;
-  gap: 1em;
-}
-
-.form__radio {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #fefdfe;
-  border-radius: 1em;
-  -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
-          box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1em;
-}
-
-.form__radio label {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  grid-gap: 1em;
-  gap: 1em;
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 0.5em;
+  justify-content: center;
   padding-bottom: 0.5em;
   padding-left: 1em;
   padding-right: 1em;
@@ -227,16 +120,13 @@ tfoot {
   vertical-align: middle;
 }
 
-.iphone {
-  background-color: #fbf6f7;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fbf6f7), to(#fff));
-  background-image: -o-linear-gradient(top, #fbf6f7, #fff);
-  background-image: linear-gradient(to bottom, #fbf6f7, #fff);
-  border-radius: 2em;
-  height: 812px;
-  -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
-          box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
-  width: 375px;
-  overflow: auto;
-  padding: 2em;
+.slade01 {
+  width: 820px;
+    background-color: #fbf6f7;
+    background-image: linear-gradient(to bottom, #fbf6f7, #fff);
+    border-radius: 2em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
+    overflow: auto;
+    padding: 16px;
+}
 }
