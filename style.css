@@ -134,10 +134,10 @@ tfoot {
 }
 
 .slade01 {
-  width: 820px;
+  width: 680px;
     background-color: #fbf6f7;
     background-image: linear-gradient(to bottom, #fbf6f7, #fff);
-    border-radius: 2em;
+    border-radius: 1.75em;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
     overflow: auto;
     padding: 16px;
