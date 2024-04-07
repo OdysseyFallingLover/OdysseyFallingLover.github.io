@@ -1,4 +1,5 @@
 //import fetch
+
 const utils = {
     rn: (int, fixed) => {
         if (int === null) return null;
@@ -17,14 +18,12 @@ const utils = {
     }
 }
 
-let tg = window.Telegram;
 
-if(tg != undefined) {
-    if (tg.WebApp != undefined && tg.WebApp.initData != undefined) { 
-        let safe = tg.WebApp.initData;
-        document.getElementById('H1xPrice').innerText = "s:} " + safe;
-        //tg.WebApp.backgroundColor = '#3d3d3d';
-        //tg.WebApp.headerColor = '#212121';
-        tg.WebApp.expand(); 
-    }    
-}
+fetch('https://api.dexscreener.com/latest/dex/tokens/0x764BFC309090E7f93EDcE53E5BeFa374CDCB7b8e')
+.then(response => response.json())
+.then(data => {
+    document.getElementById('H1xPrice').innerText = "$" + data.pairs[0].priceUsd;
+    document.getElementById('H1xLiqd').innerText = "$" + utils.rn(data.pairs[0].liquidity.usd);
+    document.getElementById('H1xFDV').innerText = "$" + utils.rn(data.pairs[0].fdv);
+    document.getElementById('H1xMcup').innerText = "$" + utils.rn(data.pairs[0].fdv);
+});

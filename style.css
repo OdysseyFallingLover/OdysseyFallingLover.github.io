@@ -17,6 +17,7 @@ html {
 }
 
 body {
+  width: 18rem;
   background-color: var(--color-background);
   display: grid;
   font-family: var(--font-family-base);
@@ -29,8 +30,17 @@ body {
   justify-items: center;
   place-items: center;
 }
-
+form {
+  display: inline-flex;
+  width: 180px;
+  justify-content: center;
+}
 button {
+
+    text-align: center;
+    height: 42px;
+    width: 160px;
+
   border: 0;
   color: inherit;
   cursor: pointer;
@@ -38,6 +48,9 @@ button {
 }
 
 .block {
+    margin-left: 4px;
+    margin-right: 4px;
+  background-color: #8b8b8b;
   display:block;
   width: 144px;
   height: 64px;
@@ -57,14 +70,14 @@ h1 {
   font-size: var(--font-size-h1);
   line-height: 1.2;
   margin-top: 0;
-  margin-bottom: 4pxs;
+  margin-bottom: 4px;
 }
 
 h2 {
   font-size: var(--font-size-h2);
   line-height: 1.2;
-  margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 8px;
+  margin-top: 21px;
 }
 
 
