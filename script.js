@@ -19,12 +19,16 @@ const utils = {
 
 let tg = window.Telegram;
 
-if(tg != undefined) {
-    if (tg.WebApp != undefined && tg.WebApp.initData != undefined) { 
-        let safe = tg.WebApp.initData;
-        document.getElementById('H1xInfoCheck').innerText = "s:} " + safe;
+//if(tg != undefined) {
+    //if (tg.WebApp != undefined && tg.WebApp.initData != undefined) { 
+        //let safe = tg.WebApp.initData;
+        //document.getElementById('H1xPrice').innerText = "" + safe;
         //tg.WebApp.backgroundColor = '#3d3d3d';
         //tg.WebApp.headerColor = '#212121';
         tg.WebApp.expand(); 
-    }    
-}
+    //}    
+//}
+BackButton.onClick(function() {
+  tg.showAlert("Нет пути назад!");
+  BackButton.hide();
+});
