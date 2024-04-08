@@ -17,18 +17,19 @@ html {
 }
 
 body {
-  width: 18rem;
   background-color: var(--color-background);
-  display: grid;
+  display: flex;
   font-family: var(--font-family-base);
   line-height: 1.5;
   margin: 0;
   padding: 5vmin;
   -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  justify-items: center;
+  -ms-flex-align: center;
+  /* align-items: center; */
   place-items: center;
+  justify-content: center;
+  justify-items: center;
+
 }
 form {
   display: inline-flex;
@@ -134,12 +135,12 @@ tfoot {
 }
 
 .slade01 {
-  width: 680px;
+    width: 720px;
+    height: 480px;
     background-color: #fbf6f7;
-    background-image: linear-gradient(to bottom, #fbf6f7, #fff);
-    border-radius: 1.75em;
-    box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
+    /*background-image: linear-gradient(to bottom, #fbf6f7, #fff);*/
+    border-radius: 2em;
     overflow: auto;
-    padding: 16px;
+    padding: 24px;
 }
 }
