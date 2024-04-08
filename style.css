@@ -136,7 +136,7 @@ tfoot {
 
 .slade01 {
     width: 720px;
-    height: 480px;
+    /*height: 480px;*/
     background-color: #fbf6f7;
     /*background-image: linear-gradient(to bottom, #fbf6f7, #fff);*/
     border-radius: 2em;
