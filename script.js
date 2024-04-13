@@ -17,7 +17,7 @@ const utils = {
     }
 }
 
-let tg = window.Telegram;
+let tg = window.Telegram.Webapp;
 
 //if(tg != undefined) {
     //if (tg.WebApp != undefined && tg.WebApp.initData != undefined) { 
