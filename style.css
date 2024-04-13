@@ -12,7 +12,12 @@
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
-
+.center{
+  width: 71%;
+}
+.end {
+  width: 14%;
+}
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
